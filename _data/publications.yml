@@ -1,0 +1,17 @@
+main:
+
+  - title: "iMotion-LLM: Instruction-Conditioned Trajectory Generation"
+    authors: Abdulwahab Felemban, <strong>Nussair Hroub</strong>, Jian Ding, Eslam Abdelrahman, Xiaoqian Shen, Abduallah Mohamed, Mohamed Elhoseiny
+    conference_short: WACV
+    conference: IEEE/CVF Winter Conference on Applications of Computer Vision <strong>(WACV)</strong>, 2026.
+    pdf: https://openaccess.thecvf.com/content/WACV2026/papers/Felemban_iMotion-LLM_Instruction-Conditioned_Trajectory_Generation_WACV_2026_paper.pdf
+    code: https://github.com/Vision-CAIR/iMotion-LLM
+    page: https://vision-cair.github.io/iMotion-LLM/
+    bibtex: https://openaccess.thecvf.com/content/WACV2026/html/Felemban_iMotion-LLM_Instruction-Conditioned_Trajectory_Generation_WACV_2026_paper.html
+    image: ./assets/img/teaser_imotion.png
+
+  - title: Explainable deep learning diagnostic system for prediction of lung disease from medical images
+    authors: <strong>Nussair Adel Hroub</strong>, Ali Nader Alsannaa, Maad Alowaifeer, Motaz Alfarraj, Emmanuel Okafor
+    conference_short: CBM
+    conference: Computers in Biology and Medicine <strong>(CBM)</strong>, vol. 170, art. no. 108012, 2024.
+    pdf: https://doi.org/10.1016/j.compbiomed.2024.108012

@@ -1,0 +1,11 @@
+---
+---
+
+@import "minimal-light";
+
+/* Entry titles inside a section are h3, one level under the section's h2, so the
+   document outline has no skipped level. The theme leaves h3/h4 sizing to the
+   browser default, which renders h3 larger — pin these back to the original size. */
+h3.entry {
+  font-size: 1em;
+}

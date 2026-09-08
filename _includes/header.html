@@ -1,0 +1,61 @@
+<!-- The left-hand identity column: avatar, name, position, affiliation, email, social icons.
+     Shared by every layout so the homepage and sub-pages stay identical. -->
+<header>
+  {% if site.avatar %}
+    {% if page.layout == 'homepage' %}
+      <a class="image avatar"><img src="{{ site.avatar | relative_url }}" alt="{{ site.title }}" /></a>
+    {% else %}
+      <a class="image avatar" href="{{ '/' | relative_url }}"><img src="{{ site.avatar | relative_url }}" alt="{{ site.title }}" /></a>
+    {% endif %}
+  {% endif %}
+
+  <h1>{% if page.layout == 'homepage' %}{{ site.title }}{% else %}<a href="{{ '/' | relative_url }}"><autocolor>{{ site.title }}</autocolor></a>{% endif %}</h1>
+
+  {% if site.position %}
+    <position style="font-size:1.10rem;">{{ site.position }}</position>
+    <br />
+  {% endif %}
+  {% if site.affiliation %}
+    <a href="{{ site.affiliation_link }}" rel="noopener"><autocolor>{{ site.affiliation }}</autocolor></a>
+    <br />
+  {% endif %}
+  {% if site.email %}
+    <email>{{ site.email }}</email>
+  {% endif %}
+
+  <br />
+  <br />
+  <div class="social-icons">
+    {% if site.google_scholar %}
+      <a style="margin: 0 5px 0 0" href="{{ site.google_scholar }}" aria-label="Google Scholar">
+        <i class="ai ai-google-scholar" style="font-size:1.2rem"></i>
+      </a>
+    {% endif %}
+
+    {% if site.github_link %}
+      <a style="margin: 0 5px 0 0" href="{{ site.github_link }}" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    {% endif %}
+
+    {% if site.linkedin %}
+      <a style="margin: 0 5px 0 0" href="{{ site.linkedin }}" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    {% endif %}
+
+    {% if site.twitter %}
+      <a style="margin: 0 5px 0 0" href="{{ site.twitter }}" aria-label="X">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+    {% endif %}
+
+    {% comment %}Set `blog_enabled: true` in _config.yml to surface the /blog/ page.{% endcomment %}
+    {% if site.blog_enabled %}
+      <a style="margin: 0 0 0 0" href="{{ '/blog/' | relative_url }}" aria-label="Blog">
+        <i class="fa-solid fa-pen-nib"></i>
+      </a>
+    {% endif %}
+  </div>
+  <br />
+</header>

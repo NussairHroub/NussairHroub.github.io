@@ -1,0 +1,62 @@
+# Basic Information
+title: Nussair Hroub
+position: MS/PhD Student in Computer Science
+affiliation: King Abdullah University of Science and Technology (KAUST)
+affiliation_link: https://www.kaust.edu.sa/
+email: nussair.hroub (at) kaust.edu.sa
+
+# Site URL
+# "url" is the domain the site is served from and "baseurl" is the sub-path it lives under.
+# This is a GitHub Pages user site, so it is served at the domain root and "baseurl" stays empty.
+url: https://nussairhroub.github.io
+baseurl: ""
+
+# Search Engine Optimization (SEO)
+# The following information is used to improve the website traffic from search engines, e.g., Google.
+keywords: Nussair Hroub, Nussair Adel Hroub, computer vision, vision-language models, vision-language-action, autonomous driving, trajectory generation, explainable AI, medical imaging, KAUST, KFUPM
+description: Homepage of Nussair Hroub, an MS/PhD student in computer science at KAUST working on computer vision, vision-language(-action) models, trajectory generation for autonomous driving, and explainable deep learning for medical imaging.
+canonical: https://nussairhroub.github.io/
+
+# Links
+# If you don't need one of them, you may delete the corresponding line.
+google_scholar: https://scholar.google.com/citations?user=o-yZqE4AAAAJ&hl=en
+github_link: https://github.com/NussairHroub
+linkedin: https://www.linkedin.com/in/nussair/
+
+# Images (e.g., your profile picture and your website's favicon)
+# "favicon" and "favicon_dark" are used for the light and dark modes, respectively.
+avatar: ./assets/img/avatar.jpg
+favicon: ./assets/img/favicon.png
+favicon_dark: ./assets/img/favicon-dark.png
+
+# Blog
+# Set to false to hide the blog icon in the header and unlink the /blog/ page.
+blog_enabled: true
+
+# Footnote
+# You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
+enable_footnote: true
+
+# Auto Dark Mode
+# You may use the option to disable the automatic dark theme
+auto_dark_mode: true
+
+# Font
+# You can use this option to choose between Serif or Sans Serif fonts.
+font: "Serif" # or "Sans Serif"
+
+# Plugins
+# jekyll-sitemap generates /sitemap.xml so search engines can index the site.
+# It is already declared in the Gemfile.
+plugins:
+  - jekyll-sitemap
+
+# The following files will be removed from the generated website.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - Nussair_CV.pdf
+  - vendor/
+  - .bundle/

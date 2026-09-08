@@ -1,0 +1,16 @@
+_site
+.sass-cache
+*.gem
+.DS_Store
+.jekyll-cache
+
+# Local Ruby/Bundler install
+vendor/
+.bundle/
+
+# The CV PDF must never be committed or published.
+Nussair_CV.pdf
+*_CV.pdf
+
+# Gemfile.lock is intentionally committed: the GitHub Actions deploy installs from it,
+# so CI builds with exactly the gem versions used locally.
