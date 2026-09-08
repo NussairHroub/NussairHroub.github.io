@@ -64,14 +64,21 @@ figure is openly available to link. To add one, save a figure from the paper as
 
 Entries without an image still line up correctly — they show the venue badge alone.
 
-## Blog
+## Blog (currently hidden)
 
-`blog.md` renders `/blog/`, and the pen icon in the header links to it. Posts are Markdown files in
-`_posts/` named `YYYY-MM-DD-slug.md` with `layout: post`; `_drafts/example-post.md` is a template.
-Preview drafts with `bundle exec jekyll serve --drafts`.
+The blog is built but switched off, so nothing about it is published. To turn it on, make both
+changes in `_config.yml`:
 
-With no posts the page reads "No posts yet." To hide the blog entirely, set `blog_enabled: false`
-in `_config.yml`.
+1. `blog_enabled: true` — shows the pen icon in the header that links to `/blog/`.
+2. Remove `- blog.md` from the `exclude:` list — otherwise the page is never generated.
+
+`blog.md` renders the post list at `/blog/`. Posts are Markdown files in `_posts/` named
+`YYYY-MM-DD-slug.md` with `layout: post`; `_drafts/example-post.md` is a template. Preview drafts
+with `bundle exec jekyll serve --drafts`. With no posts the page reads "No posts yet.", so it is
+worth writing one before turning the blog on.
+
+The `_layouts/page.html` and `_layouts/post.html` layouts stay in the repo either way; they cost
+nothing while the blog is off.
 
 ## Deployment
 

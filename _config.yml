@@ -30,8 +30,10 @@ favicon: ./assets/img/favicon.png
 favicon_dark: ./assets/img/favicon-dark.png
 
 # Blog
-# Set to false to hide the blog icon in the header and unlink the /blog/ page.
-blog_enabled: true
+# Currently hidden. To bring the blog back, set this to true AND remove "blog.md"
+# from the exclude: list at the bottom of this file. Both are needed: this flag
+# controls the header icon, and the exclude entry stops the page being built at all.
+blog_enabled: false
 
 # Footnote
 # You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
@@ -60,3 +62,5 @@ exclude:
   - Nussair_CV.pdf
   - vendor/
   - .bundle/
+  # Blog is hidden for now - see blog_enabled above. Remove this line to publish /blog/.
+  - blog.md
